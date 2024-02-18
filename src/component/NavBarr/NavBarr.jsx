@@ -1,5 +1,7 @@
 import React from 'react';
 import "./NavBarr.css";
+import { NavLink } from 'react-router-dom'
+
 export const NavBarr = () => {
   return (
     <div>
@@ -10,11 +12,11 @@ export const NavBarr = () => {
         <div class="nav-wrapper">
         
         <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#course">Course</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><NavLink to='/'>Home</NavLink></li>
+      <li><NavLink to='/Course'>Course</NavLink></li>
+      <li><NavLink to='/Services'>Services</NavLink></li>
+      <li><NavLink to='/Shop'>Shop</NavLink></li>
+      <li><NavLink to='/Contact'>Contact</NavLink></li>
     </ul>
         </div>
     </nav>

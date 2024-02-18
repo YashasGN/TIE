@@ -1,0 +1,39 @@
+.slider {
+  width: 70%; /* Adjusted width after 30% reduction */
+  height: 800px; /* Adjust the height of the slider container */
+  overflow: hidden; /* Hide overflow content */
+  position: relative;
+  margin: 0 auto; /* Align to center */
+  transform: scale(0.7); /* Reduce size by 30% */
+  border-radius: 30px; /* Add corner radius */
+}
+
+.slider img {
+  width: 100%; /* Ensure images fill the slider container */
+  height: 100%; /* Maintain aspect ratio */
+  transition: transform 0.5s ease; /* Smooth transition for image changes */
+  border-radius: 30px; /* Add corner radius to images */
+}
+.dots {
+  position: absolute;
+  bottom: 450px; /* Adjust vertical position */
+  left: 0;
+  right: 0;
+  margin: 0 ; /* Center horizontally */
+  text-align: center; /* Align dots horizontally */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px; /* Adjust spacing between dots as needed */
+  cursor: pointer;
+}
+
+/* Active dot */
+.dot.active {
+  background-color: white;
+}
